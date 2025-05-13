@@ -29,6 +29,7 @@ export function ThemeProvider({
   children,
   defaultTheme = "system",
   storageKey = "diff-digest-theme",
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   attribute = "data-theme",
   enableSystem = true,
   disableTransitionOnChange = false,

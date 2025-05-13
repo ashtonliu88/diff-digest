@@ -144,7 +144,10 @@ export function useNotesGenerator({
         try {
           const errorData = await response.json();
           errorMessage = errorData.error || errorMessage;
-        } catch (e) {
+        } catch (
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          e
+        ) {
           // If parsing fails, use the default error message
         }
         throw new Error(errorMessage);

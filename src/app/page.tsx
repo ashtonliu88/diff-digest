@@ -34,6 +34,7 @@ export default function Home() {
   const [diffs, setDiffs] = useState<DiffItem[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [nextPage, setNextPage] = useState<number | null>(null);
   const [initialFetchDone, setInitialFetchDone] = useState<boolean>(false);

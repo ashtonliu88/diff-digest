@@ -117,7 +117,10 @@ ${diff}
           error: error instanceof Error ? error.message : "An unknown error occurred",
         });
         await writer.write(new TextEncoder().encode(errorMessage));
-      } catch (e) {
+      } catch (
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        e
+      ) {
         // Ignore errors during error handling
       } finally {
         await writer.close();
